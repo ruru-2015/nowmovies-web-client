@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from 'react';
+import WhatsOn from './whats_on'
 // import {connect} from 'react-redux';
 // import {Content} from '../component/Content.js';
 // import {Header} from '../component/Header.js';
@@ -11,9 +12,7 @@ class Layout extends React.Component{
 
     return (
       <div className='layout'>
-        {movies.map(movie => {
-          return <div>{movie.title} </div>
-        })}
+        <WhatsOn {...this.props} />
       </div>
     );
   }
@@ -21,3 +20,6 @@ class Layout extends React.Component{
 
 export default Layout
 
+        // {movies.map(movie => {
+        //   return <div>{movie.title} </div>
+        // })}

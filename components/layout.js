@@ -9,10 +9,9 @@ class Layout extends React.Component{
 
   render() {
     const { movies } = this.props
-
     return (
       <div className='layout'>
-        <WhatsOn {...this.props} />
+        <WhatsOn data={this.props.movies} />
       </div>
     );
   }

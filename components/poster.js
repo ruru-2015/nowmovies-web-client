@@ -2,8 +2,7 @@ import React from 'react'
 
 class Poster extends React.Component{
   render(){
-    const poster = this.props.movies[0].poster
-    console.log(poster)
+    const poster = this.props.poster
     return(
       <div className="poster">
         <img src={poster} />

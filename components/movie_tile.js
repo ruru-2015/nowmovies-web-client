@@ -4,11 +4,11 @@ import MovieInfo from './movie_info'
 
 class MovieTile extends React.Component{
   render(){
-    console.log("movie tile: ", this.props)
     return(
       <div className="movieTile">
-        <h1> {this.props.title} </h1>
+        <h1> {this.props.movie.title} </h1>
         <Poster poster={this.props.movie.poster} />
+        <MovieInfo data={this.props.movie} />
       </div>
     )
   }

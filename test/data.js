@@ -19,6 +19,16 @@ const movies = [
     "genres": ["Sci-fi"],
     "actors": ["Luke"],
     "poster": "http://the-gadgeteer.com/wp-content/uploads/2014/05/starwars.jpg"
+  },
+    {
+    "title": "The Life Aquatic",
+    "year": 2001,
+    "rated": "5+",
+    "releaseDate": "23-04-2001",
+    "runtime": 170,
+    "genres": ["Comedy"],
+    "actors": ["Billy boy"],
+    "poster": "http://i.imgur.com/3F7uS1b.jpg"
   }
 ]
 

@@ -2,14 +2,15 @@ import React from 'react'
 
 class MovieInfo extends React.Component{
   render(){
+    const info = this.props.data
     return(
       <div className="movieInfo">
         <ul>
-          <li>Rating: {this.props.movies[0].rated}</li>
-          <li>Year: {this.props.movies[0].year}</li>
-          <li>Runtime: {this.props.movies[0].runtime}</li>
-          <li>Genre: {this.props.movies[0].genres}</li>
-          <li>Actors: {this.props.movies[0].actors}</li>
+          <li>Title: {info.title}</li>
+          <li>Year: {info.year}</li>
+          <li>Runtime: {info.runtime}</li>
+          <li>Genre: {info.genre}</li>
+          <li>Actors: {info.actors}</li>
         </ul>
       </div>
     )
